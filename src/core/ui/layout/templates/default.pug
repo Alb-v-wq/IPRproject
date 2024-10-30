@@ -1,3 +1,6 @@
+//- mixins
+include ../../button/index
+
 doctype html
 html(lang="ru")
   meta(charset="utf-8")
@@ -12,13 +15,14 @@ html(lang="ru")
   body
     .layout
       .layout__header
-        block beforeWorkarea
+        //Минус инклудов в том, что они менее гибкие, но если мы не планируем изменять этот компонент, то нам миксины и не нужны
+        include ../../header/templates/default
 
       .layout__main
         block workarea
 
       .layout__footer
         block afterWorkarea
-      
+
 
     script(src="js/index.js")

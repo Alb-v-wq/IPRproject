@@ -1,0 +1,10 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+.header {
+  width: 100%;
+  padding: 28px 0 20px;
+  background: gray;
+  border-bottom: 1px solid config.$colors-black;
+  z-index: 800;
+}

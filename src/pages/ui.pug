@@ -1,0 +1,28 @@
+extends ../core/ui/layout/templates/default
+
+block title
+    | Ui Kit
+
+block workarea
+
+    .container
+
+        section.section
+            h1 Ui Kit
+        section.section
+            .row-flex._gap_md._align_center
+                +buttonTypeDefault({
+                    mix: '_size_lg _width_full',
+                    text: 'More comments',
+                    showSmile: true
+                })
+
+                +buttonTypeDefault({
+                    mix: '_size_lg _theme_red',
+                    text: 'More comments',
+                    type: 'submit'
+                })
+
+                .button._theme_grey
+                    span.button__text More comments
+

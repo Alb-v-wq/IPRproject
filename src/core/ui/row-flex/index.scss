@@ -1,0 +1,14 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+.row-flex {
+  display: flex;
+}
+
+.row-flex._gap_md {
+  gap: 34px;
+}
+
+.row-flex._align_center {
+  align-items: center;
+}

@@ -1,3 +1,20 @@
 header.header
-    .container
-        span Это хедер
+    .container 
+        .header__wrapper
+            svg 
+                use(href="/assets/icons/clean/sprite.svg#main-logo")
+            ul.header__menu 
+                li.header__list 
+                    a(href="#") О нас
+                li.header__list 
+                    a(href="#") Каталог
+                li.header__list 
+                    a(href="#") Сертификаты
+                li.header__list 
+                    a(href="#") Отзывы
+                li.header__list 
+                    a(href="#") Контакты
+            .header__contacts
+                svg 
+                    use(href="/assets/sprites/clean/sprite.svg#phone")
+                a(href="tel: +77711459826") 8 (771) 145-98-26 

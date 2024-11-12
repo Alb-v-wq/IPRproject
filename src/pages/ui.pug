@@ -10,19 +10,23 @@ block workarea
         section.section
             h1 Ui Kit
         section.section
-            .row-flex._gap_md._align_center
-                +buttonTypeDefault({
-                    mix: '_size_lg _width_full',
-                    text: 'More comments',
-                    showSmile: true
-                })
+            +cardCatalog({
+                header:"подготовка к школе",
+                price:"30 000",
+                descr:"4-6 лет <br> 3 занятия в неделю по 3 ч.",
+                items:["Математика", "Физика"],
+                mix:"_theme_green"
+            }) 
 
-                +buttonTypeDefault({
-                    mix: '_size_lg _theme_red',
-                    text: 'More comments',
-                    type: 'submit'
-                })
 
-                .button._theme_grey
-                    span.button__text More comments
+
+
+                //- +button({
+                //-     mix: '_size_lg _theme_red',
+                //-     text: 'More comments',
+                //-     type: 'submit'
+                //- })
+
+                //- .button._theme_grey
+                //-     span.button__text More comments
 

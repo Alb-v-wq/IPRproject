@@ -1,0 +1,14 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+.card-catalog {
+    &__header {
+        
+    }
+}
+
+.card-catalog._theme_green {
+    .card-catalog__header {
+        background: rgb(78, 202, 48);
+    }
+}

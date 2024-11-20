@@ -6,17 +6,29 @@ block title
 block workarea
 
     .container
-
         section.section
-            h1 Ui Kit
-        section.section
-            +cardCatalog({
+            .section__wrapper 
+                +cardCatalog({
                 header:"подготовка к школе",
-                price:"30 000",
+                price:"30 000 тг",
                 descr:"4-6 лет <br> 3 занятия в неделю по 3 ч.",
-                items:["Математика", "Физика"],
+                items:["Обучение чтению", "Письмо", "Математика", "Английский язык"],
+                mix:"_theme_blue"
+                })
+                +cardCatalog({
+                header:"скорочтение",
+                price:"27 000 тг",
+                descr:"6-15 лет <br> 3 занятия в неделю по 1 ч.",
+                items:["Увеличение скорости чтения", "Артикуляция", "Развитие речи", "Развитие внимания"],
+                mix:"_theme_violet"
+                }) 
+                +cardCatalog({
+                header:"ментальная арифметика",
+                price:"20 000 тг",
+                descr:"2 занятия в неделю по 1 ч.",
+                items:["Быстрый счет", "Развитие высокой концентрации", "Увеличение поля зрения", "Фотографическая память"],
                 mix:"_theme_green"
-            }) 
+                }) 
 
 
 

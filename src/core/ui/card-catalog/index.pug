@@ -10,7 +10,8 @@ mixin cardCatalog(params)
             ul 
                 each el in params.items 
                     li!= el 
+            a.card-catalog__link(href="#") Подробнее...
             +button({
-                text:"выбрать", 
+                text:"Выбрать", 
                 mix:params.mix
                 })

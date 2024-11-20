@@ -2,13 +2,94 @@
 @use '../../lib/scss' as lib;
 
 .card-catalog {
+    width: 340px;
+    min-height: 778px;
+    border-radius: 30px;
     &__header {
-        
+        width: 340px;
+        height: 80px;
+        padding: 25px 0;
+        border-radius: 30px 30px 0px 0px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0;
+    }
+    &__price {
+        color: rgb(0, 0, 0);
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 59px;
+    }
+    &__descr {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        margin-top: 24px;
+        text-align: center;
+    }
+    ul {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        text-align: center;
+        list-style-type: none;
+        margin-top: 60px;
+        li {
+            margin-bottom: 24px;
+        }
+    }
+    &__link {
+        color: rgb(1, 143, 163);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        text-decoration: none;
+        margin-bottom: 60px;
+    }
+}
+
+.card-catalog._theme_blue {
+    .card-catalog__header {
+        background: rgb(1, 143, 163);
+    }
+}
+
+.card-catalog._theme_violet {
+    .card-catalog__header {
+        background: rgb(149, 93, 234);
     }
 }
 
 .card-catalog._theme_green {
     .card-catalog__header {
         background: rgb(78, 202, 48);
+    }
+    .card-catalog__descr {
+        margin-top: 50px;
+    }
+}
+
+.card-catalog._theme_orange {
+    .card-catalog__header {
+        background: rgba(255, 167, 36, 1);
+    }
+}
+
+.card-catalog._theme_pink {
+    .card-catalog__header {
+        background: rgba(255, 76, 148, 1);
     }
 }

@@ -10,14 +10,21 @@
   text-align: center;
   cursor: pointer;
   border: none;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: center;
 }
 .button._shadow_yellow {
   width: 244px;
   height: 64px;
+  color: rgb(0, 0, 0);
   border-radius: 30px;
   box-shadow: 0px 20px 40px -27px;
   background-color: rgb(250, 224, 26);
   font-size: 20px;
+  margin-top: 44px;
 }
 .button._theme_green {
   background: rgb(78, 202, 48);

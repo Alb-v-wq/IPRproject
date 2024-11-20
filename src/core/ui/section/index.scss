@@ -1,6 +1,161 @@
 @use '../../config/scss' as config;
 @use '../../lib/scss' as lib;
 
-.section {
-  padding: 40px 0;
+// .section.section {
+//   padding: 40px 0;
+// }
+
+.section.section.s-promo {
+  min-height: 749px;
+  h1{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 59px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 156px;
+    span {
+      color: rgb(1, 143, 163);
+      text-shadow: -38px -28px 1px rgba(1, 143, 163, 0.06);
+    }
+  }
+  &__descr {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 44px;
+  }
+  &__main-img {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    z-index: -1;
+  }
+  &__letter-W {
+    position: absolute;
+    z-index: -2;
+    top: 67px;
+    right: 906px;
+  }
+  &__blue-book {
+    position: absolute;
+    z-index: -2;
+    top: 160px;
+    right: 800px;
+  }
+  &__books {
+    position: absolute;
+    z-index: -2;
+    top: 270px;
+    right: 233px;
+  }
+  &__letter-A {
+    position: absolute;
+    z-index: -2;
+    top: 770px;
+    left: 161px;
+  }
+  &__number-five {
+    position: absolute;
+    z-index: -2;
+    top: 530px;
+    right: 513px;
+  }
+  &__pen {
+    position: absolute;
+    z-index: -2;
+    top: 590px;
+    left: 476px;
+  }
+
+}
+
+.section.s-inform {
+  position: relative;
+  min-height: 839px;
+  &__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 115px;
+  }
+  &__text-wrapper {
+    width: 544px;
+    height: 275px;
+    position: relative;
+    margin-left: 43px;
+    &_order {
+      order: 2;
+    }
+  }
+  &__circle-yellow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &__circle-blue {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  &__underlay {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 440px;
+    height: 204px;
+    border-radius: 30px;
+    background: rgb(255, 247, 190);
+    z-index: 1;
+    &_left {
+      top: 0;
+      left: 40px;
+    }
+  }
+  &__descr {
+    position: absolute;
+    top: 80px;
+    right: 33px;
+    width: 459px;
+    height: 203px;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    &_left {
+      top: 45px;
+      left: 0;
+    }
+  }
+
+  &__pic__wrapper {
+    position: relative;
+    &_order {
+      order: 1;
+    }
+  }
+  &__border {
+    position: absolute;
+    width: 488px;
+    height: 343px;
+    box-sizing: border-box;
+    border: 4px dashed rgb(1, 143, 163);
+    border-radius: 30px;
+    top: 38px;
+    right: 80px;
+    z-index: -1;
+    &_left {
+      top: 500px;
+      left: 80px;
+    }
+  }
 }

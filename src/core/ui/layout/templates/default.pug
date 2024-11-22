@@ -3,26 +3,27 @@ include ../../button/index
 
 doctype html
 html(lang="ru")
-  meta(charset="utf-8")
-  meta(http-equiv="X-UA-Compatible", content="IE=edge")
-  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-  link(rel="stylesheet", href="css/index.css")
+    link(rel="stylesheet", href="vendors/swiper/swiper-bundle.css")
+    link(rel="stylesheet", href="css/index.css")
 
-  title
-    block title
+    title
+        block title
 
-  body
-    .layout
-      .layout__header
-        //Минус инклудов в том, что они менее гибкие, но если мы не планируем изменять этот компонент, то нам миксины и не нужны
-        include ../../header/templates/default
+    body
+        .layout
+            .layout__header
+                include ../../header/templates/default
 
-      .layout__main
-        block workarea
+            .layout__main
+                block workarea
 
-      .layout__footer
-        block afterWorkarea
+            .layout__footer
+                block afterWorkarea
 
 
-    script(src="js/index.js")
+        script(src="vendors/swiper/swiper-bundle.min.js")
+        script(src="js/index.js")

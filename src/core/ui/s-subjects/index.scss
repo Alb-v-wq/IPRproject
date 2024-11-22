@@ -1,58 +1,61 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
 .s-subjects {
-    min-height: 719px;
-    margin-top: 107px;
-    position: relative;
-    &__block {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    &__blocks-wrapper {
-      width: 794px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      &_sm {
-        width: 996px;
-      }
-    }
-    &__item-wrapper {
-      display: flex;
-      flex-direction: column;
-      margin-top: 26px;
-    }
-    &__text {
-      color: rgb(0, 0, 0);
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 29px;
-      text-align: center;
-      width: 140px;
-    }
-    &__img {
-      width: 120px;
-      height: 120px;
-      display: block;
-      margin: 0 auto;
-    }
-  
-    &__block-center {
-      position: absolute;
-      top: 50px;
-      left: 570px;
-      width: 373px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    &__descr {
-      color: rgb(0, 0, 0);
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 29px;
-      text-align: center;
-      margin-top: 16px;
+  min-height: 719px;
+  margin-top: 107px;
+  position: relative;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__blocks-wrapper {
+    width: 794px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &_sm {
+      width: 996px;
     }
   }
+  &__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px;
+  }
+  &__text {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    width: 140px;
+  }
+  &__img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__block-center {
+    position: absolute;
+    top: 50px;
+    left: 570px;
+    width: 373px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__descr {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    margin-top: 16px;
+  }
+}

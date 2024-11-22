@@ -8,6 +8,9 @@
 @use '../core/ui/row-flex';
 @use '../core/ui/header';
 @use '../core/ui/card-catalog';
+@use '../core/ui/s-promo';
+@use '../core/ui/s-inform';
+@use '../core/ui/s-subjects';
 
 @include lib.font('Commissioner', 400, 'Commissioner-Regular');
 @include lib.font('Commissioner', 500, 'Commissioner-Medium');

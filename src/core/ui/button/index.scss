@@ -16,15 +16,8 @@
   line-height: 29px;
   text-align: center;
 }
-.button._shadow_yellow {
-  width: 244px;
-  height: 64px;
-  color: rgb(0, 0, 0);
-  border-radius: 30px;
+.button._shadow {
   box-shadow: 0px 20px 40px -27px;
-  background-color: rgb(250, 224, 26);
-  font-size: 20px;
-  margin-top: 44px;
 }
 .button._theme_green {
   background: rgb(78, 202, 48);
@@ -41,80 +34,14 @@
 .button._theme_orange {
   background: rgba(255, 167, 36, 1);
 }
-
-
-
-
-
-
-
-
-// .button {
-//   background: transparent;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   padding: 20px 24px;
-//   gap: 20px;
-//   cursor: pointer;
-//   transition: .3s ease;
-//   text-align: center;
-//   font-size: 20px;
-//   font-weight: 500;
-//   line-height: 24px;
-//   letter-spacing: 0.4px;
-//   max-width: max-content;
-
-//   @media only screen and (max-width: config.$bp-sm) {
-//     font-size: 16px;
-//     line-height: 24px;
-//     padding: 12px;
-//   }
-
-//    &__text {
-//      text-align: center;
-//      font-size: 20px;
-//      font-weight: 500;
-//      line-height: 24px;
-//      letter-spacing: 0.4px;
-
-//      @media only screen and (max-width: config.$bp-sm) {
-//        font-size: 16px;
-//        line-height: 19px;
-//        letter-spacing: 0.04em;
-//      }
-//    }
-// }
-
-// .button._theme_red {
-//   border: 1px solid red;
-//   background-color: red;
-//   color: config.$colors-white;
-
-//   &:hover {
-//     background-color: white;
-//     color: red;
-//   }
-// }
-
-// .button._theme_grey {
-//   border: 1px solid gray;
-//   background-color: darkgrey;
-//   color: config.$colors-black;
-
-//   &:hover {
-//     border: 1px solid config.$colors-black;
-//     color: config.$colors-white;
-//   }
-// }
-
-// .button._not-allowed {
-//   opacity: 0.6;
-//   cursor: not-allowed;
-//   pointer-events: none;
-// }
-
-// .button._width_full {
-//   width: 100%;
-//   max-width: 100%;
-// }
+.button._theme_yellow {
+  background: rgb(250, 224, 26);
+}
+.button._size_m {
+  width: 244px;
+  height: 64px;
+  border-radius: 30px;
+  margin-top: 44px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}

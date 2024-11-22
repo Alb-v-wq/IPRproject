@@ -5,39 +5,66 @@ block title
 
 block workarea
 
-    section.section.s-promo 
-        .container 
-            h1 <span> KEMENGER MEKTEBI </span> - центр <br> интеллектуального развития
-            .section.s-promo__descr Обучение происходит на казахском и русском <br> языках. При записи на два или более курсов <br> предусмотрена скидка. Запишитесь на <br> бесплатный пробный урок.
-            +button({
-                text:"Оставить заявку", 
-                mix:"_shadow_yellow"
-                })
-            img.section.s-promo__main-img(src="/assets/media/child.png", alt="child")
-            img.section.s-promo__letter-W(src="/assets/media/letter-W.png", alt="letter-W")
-            img.section.s-promo__blue-book(src="/assets/media/blue-book.png", alt="blue-book")
-            img.section.s-promo__books(src="/assets/media/books.png", alt="books")
-            img.section.s-promo__letter-A(src="/assets/media/letter-A.png", alt="letter-A")
-            img.section.s-promo__number-five(src="/assets/media/number-five.png", alt="number-five")
-            img.section.s-promo__pen(src="/assets/media/pen.png", alt="pen")
+    //- section.section.s-promo 
+    //-     .container 
+    //-         h1 <span> KEMENGER MEKTEBI </span> - центр интеллектуального развития
+    //-         .section.s-promo__descr Обучение происходит на казахском и русском языках. При записи на два или более курсов предусмотрена скидка. Запишитесь на бесплатный пробный урок.
+    //-         +button({
+    //-             text:"Оставить заявку", 
+    //-             mix:"_shadow _theme_yellow _size_m"
+    //-             })
+    //-         img.section.s-promo__main-img(src="/assets/media/child.png", alt="child")
+    //-         img.section.s-promo__letter-W(src="/assets/media/letter-W.png", alt="letter-W")
+    //-         img.section.s-promo__blue-book(src="/assets/media/blue-book.png", alt="blue-book")
+    //-         img.section.s-promo__books(src="/assets/media/books.png", alt="books")
+    //-         img.section.s-promo__letter-A(src="/assets/media/letter-A.png", alt="letter-A")
+    //-         img.section.s-promo__number-five(src="/assets/media/number-five.png", alt="number-five")
+    //-         img.section.s-promo__pen(src="/assets/media/pen.png", alt="pen")
 
-    section.section.s-inform 
-        .container 
-            .section.s-inform__block
-                .section.s-inform__text-wrapper
-                    img.section.s-inform__circle-yellow(src="/assets/media/circle-2.png", alt="circle")
-                    .section.s-inform__underlay
-                    .section.s-inform__descr В нашем центре работают профессиональные педагоги, любящие детей и преданные своему делу. Мы помогаем детям совершенствовать свои интеллекуальные способности, чтобы они могли познавать мир и делать его более красивым и добрым.
-                .section.s-inform__pic-wrapper
-                    img.section.s-inform__teacher(src="/assets/media/inform-pic-1.jpg", alt="teacher")
-                    .section.s-inform__border
+    //- section.section.s-inform 
+    //-     .container 
+    //-         .section.s-inform__block
+    //-             .section.s-inform__text-wrapper
+    //-                 .section.s-inform__underlay
+    //-                 .section.s-inform__descr В нашем центре работают профессиональные педагоги, любящие детей и преданные своему делу. Мы помогаем детям совершенствовать свои интеллекуальные способности, чтобы они могли познавать мир и делать его более красивым и добрым.
+    //-             .section.s-inform__pic-wrapper
+    //-                 img.section.s-inform__img(src="/assets/media/inform-pic-1.jpg", alt="teacher")
 
-            .section.s-inform__block
-                .section.s-inform__text-wrapper.section.s-inform__text-wrapper_order
-                    img.section.s-inform__circle-blue(src="/assets/media/circle-1.png", alt="circle")
-                    .section.s-inform__underlay.section.s-inform__underlay_left
-                    .section.s-inform__descr.section.s-inform__descr_left Наши ученики показывают результат уже с первого месяца работы, мы поддерживаем в нашем центре теплую и дружескую атмосферу Побывав у нас детям обязательно захочется вернуться сюда снова Развивайтесь вместе с нами.
-                .section.s-inform__pic-wrapper.section.s-inform__pic-wrapper_order
-                    img.section.s-inform__kids(src="/assets/media/inform-pic-2.jpg", alt="kids")
-                    .section.s-inform__border.section.s-inform__border_left
+    //-         .section.s-inform__block
+    //-             .section.s-inform__text-wrapper.section.s-inform__text-wrapper_order
+    //-                 .section.s-inform__underlay.section.s-inform__underlay_left
+    //-                 .section.s-inform__descr.section.s-inform__descr_left Наши ученики показывают результат уже с первого месяца работы, мы поддерживаем в нашем центре теплую и дружескую атмосферу Побывав у нас детям обязательно захочется вернуться сюда снова Развивайтесь вместе с нами.
+    //-             .section.s-inform__pic-wrapper.section.s-inform__pic-wrapper_order
+    //-                 img.section.s-inform__img.section.s-inform__left(src="/assets/media/inform-pic-2.jpg", alt="kids")
+    
+    //- section.s-subjects
+    //-     .container
+    //-         .s-subjects__block
+    //-             .s-subjects__blocks-wrapper
+    //-                 .s-subjects__item-wrapper 
+    //-                     img.s-subjects__img(src="/assets/media/arithmetic.png", alt="arithmetic")
+    //-                     .s-subjects__text Ментальная арифметика
+    //-                 .s-subjects__item-wrapper 
+    //-                     img.s-subjects__img(src="/assets/media/calligraphy.png", alt="calligraphy")
+    //-                     .s-subjects__text Каллиграфия
+    //-             .s-subjects__blocks-wrapper.s-subjects__blocks-wrapper_sm
+    //-                 .s-subjects__item-wrapper 
+    //-                     img.s-subjects__img(src="/assets/media/speed-reading.png", alt="speed-reading")
+    //-                     .s-subjects__text Скорочтение
+    //-                 .s-subjects__item-wrapper 
+    //-                     img.s-subjects__img(src="/assets/media/english.png", alt="english")
+    //-                     .s-subjects__text Английский язык
+    //-             .s-subjects__blocks-wrapper
+    //-                 .s-subjects__item-wrapper 
+    //-                     img.s-subjects__img(src="/assets/media/preparation.png", alt="preparation")
+    //-                     .s-subjects__text Подготовка к школе
+    //-                 .s-subjects__item-wrapper 
+    //-                     img.s-subjects__img(src="/assets/media/memory.png", alt="memory")
+    //-                     .s-subjects__text Супер память
+    //-             .s-subjects__item-wrapper 
+    //-                     img.s-subjects__img(src="/assets/media/after-school.png", alt="after-school")
+    //-                     .s-subjects__text Группа продленного дня
+    //-         .s-subjects__block-center
+    //-             img.s-s-subjects__main-img(src="/assets/media/teather.jpg", alt="teather")
+    //-             .s-subjects__descr Мы развиваем детей с 5 до 16 лет по следующим направлениям
             

@@ -1,0 +1,37 @@
+section.section.s-catalog
+    .container
+        h2.section__title Каталог
+        .swiper.s-catalog__swiper
+            .swiper-wrapper.s-catalog__swiper-wrapper
+                each val in [1, 2]
+                    .swiper-slide.s-catalog__swiper-slide
+                        p раскомментировать
+                        //+cardCatalog({
+                        //    header: "подготовка к школе",
+                        //    price: "30 000 тг",
+                        //    descr: "4-6 лет <br> 3 занятия в неделю по 3 ч.",
+                        //    items: ["Обучение чтению", "Письмо", "Математика", "Английский язык"],
+                        //    mix: "_theme_blue"
+                        //})
+                    .swiper-slide.s-catalog__swiper-slide
+                        p раскомментировать
+                        //+cardCatalog({
+                        //    header: "скорочтение",
+                        //    price: "27 000 тг",
+                        //    descr: "6-15 лет <br> 3 занятия в неделю по 1 ч.",
+                        //    items: ["Увеличение скорости чтения", "Артикуляция", "Развитие речи", "Развитие внимания"],
+                        //    mix: "_theme_violet"
+                        //})
+                    .swiper-slide.s-catalog__swiper-slide
+                        p раскомментировать
+                        //+cardCatalog({
+                        //    header: "ментальная арифметика",
+                        //    price: "20 000 тг",
+                        //    descr: "2 занятия в неделю по 1 ч.",
+                        //    items: ["Быстрый счет", "Развитие высокой концентрации", "Увеличение поля зрения", "Фотографическая память"],
+                        //    mix: "_theme_green"
+                        //})
+            .swiper-button-prev.s-catalog__swiper-button._prev
+            .swiper-button-next.s-catalog__swiper-button._nex
+
+

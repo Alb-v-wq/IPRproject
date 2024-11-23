@@ -1,10 +1,8 @@
-mixin buttonTypeDefault(params)
+mixin button(params)
     -
         const classes = params.mix ? `button ${params.mix}` : 'button';
 
     button(class= classes, type=params.type || 'button' )&attributes(attributes)
         span.button__text!= params.text
-        //тут как раз плюс пага в том, что мы можем делать условные конструкции (если мы передаем параметр showSmile, то у нас выведется улыбочка)
-        if(params.showSmile)
-            span.button__text :)
+
 

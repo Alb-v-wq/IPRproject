@@ -1,0 +1,17 @@
+mixin cardCatalog(params)
+    -
+        const classes = params.mix ? `card-catalog ${params.mix}` : 'card-catalog';
+
+    div(class= classes)
+        .card-catalog__header!= params.header
+        .card-catalog__content 
+            span.card-catalog__price!= params.price 
+            span.card-catalog__descr!= params.descr 
+            ul 
+                each el in params.items 
+                    li!= el 
+            a.card-catalog__link(href="#") Подробнее...
+            +button({
+                text:"Выбрать", 
+                mix:params.mix
+                })

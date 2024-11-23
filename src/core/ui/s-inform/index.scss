@@ -1,0 +1,122 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+.s-inform {
+  position: relative;
+  min-height: 839px;
+  &__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 115px;
+  }
+  &__text-wrapper {
+    width: 544px;
+    height: 275px;
+    position: relative;
+    margin-left: 43px;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background-image: url('/assets/media/circle-2.png');
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      width: 440px;
+      height: 204px;
+      border-radius: 30px;
+      background: rgb(255, 247, 190);
+      z-index: 1;
+    }
+    &_order {
+      order: 2;
+      position: relative;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-image: url('/assets/media/circle-1.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        top: 70px;
+        left: 350px;
+        z-index: -1;
+      }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 440px;
+        height: 204px;
+        border-radius: 30px;
+        background: rgb(255, 247, 190);
+        z-index: 1;
+      }
+    }
+  }
+  &__descr {
+    position: absolute;
+    top: 80px;
+    right: 33px;
+    width: 459px;
+    height: 203px;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    &_left {
+      top: 56px;
+      left: 0;
+    }
+  }
+  &__pic-wrapper {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 488px;
+      height: 343px;
+      box-sizing: border-box;
+      border: 4px dashed rgb(1, 143, 163);
+      border-radius: 30px;
+      top: 38px;
+      left: 40px;
+      z-index: -1;
+    }
+    &_order {
+      position: relative;
+      order: 1;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 488px;
+        height: 343px;
+        box-sizing: border-box;
+        border: 4px dashed rgb(1, 143, 163);
+        border-radius: 30px;
+        top: 38px;
+        left: -40px;
+        z-index: -1;
+      }
+    }
+  }
+}

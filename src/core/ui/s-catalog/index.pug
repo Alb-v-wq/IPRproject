@@ -1,37 +1,58 @@
-section.section.s-catalog
+.s-catalog
     .container
         h2.section__title Каталог
         .swiper.s-catalog__swiper
             .swiper-wrapper.s-catalog__swiper-wrapper
                 each val in [1, 2]
                     .swiper-slide.s-catalog__swiper-slide
-                        p раскомментировать
-                        //+cardCatalog({
-                        //    header: "подготовка к школе",
-                        //    price: "30 000 тг",
-                        //    descr: "4-6 лет <br> 3 занятия в неделю по 3 ч.",
-                        //    items: ["Обучение чтению", "Письмо", "Математика", "Английский язык"],
-                        //    mix: "_theme_blue"
-                        //})
+                        +cardCatalog({
+                        header: "подготовка к школе",
+                        price: "30 000 тг",
+                        descr: "4-6 лет <br> 3 занятия в неделю по 3 ч.",
+                        items: ["Обучение чтению", "Письмо", "Математика", "Английский язык"],
+                        mix: "_theme_blue"
+                        })
                     .swiper-slide.s-catalog__swiper-slide
-                        p раскомментировать
-                        //+cardCatalog({
-                        //    header: "скорочтение",
-                        //    price: "27 000 тг",
-                        //    descr: "6-15 лет <br> 3 занятия в неделю по 1 ч.",
-                        //    items: ["Увеличение скорости чтения", "Артикуляция", "Развитие речи", "Развитие внимания"],
-                        //    mix: "_theme_violet"
-                        //})
+                        +cardCatalog({
+                        header: "скорочтение",
+                        price: "27 000 тг",
+                        descr: "6-15 лет <br> 3 занятия в неделю по 1 ч.",
+                        items: ["Увеличение скорости чтения", "Артикуляция", "Развитие речи", "Развитие внимания"],
+                        mix: "_theme_violet"
+                        })
                     .swiper-slide.s-catalog__swiper-slide
-                        p раскомментировать
-                        //+cardCatalog({
-                        //    header: "ментальная арифметика",
-                        //    price: "20 000 тг",
-                        //    descr: "2 занятия в неделю по 1 ч.",
-                        //    items: ["Быстрый счет", "Развитие высокой концентрации", "Увеличение поля зрения", "Фотографическая память"],
-                        //    mix: "_theme_green"
-                        //})
-            .swiper-button-prev.s-catalog__swiper-button._prev
-            .swiper-button-next.s-catalog__swiper-button._nex
+                        +cardCatalog({
+                        header: "ментальная арифметика",
+                        price: "20 000 тг",
+                        descr: "2 занятия в неделю по 1 ч.",
+                        items: ["Быстрый счет", "Развитие высокой концентрации", "Увеличение поля зрения", "Фотографическая память"],
+                        mix: "_theme_green"
+                        })
+                    .swiper-slide.s-catalog__swiper-slide
+                        +cardCatalog({
+                        header: "каллиграфия",
+                        price: "24 000 тг",
+                        descr: "3 занятия в неделю по 1 ч.",
+                        items: ["Развитие памяти", "Восприятие пространства", "Прокачивание мелкой моторики", "Основы грамотного письма"],
+                        mix: "_theme_yellow"
+                        })
+                    .swiper-slide.s-catalog__swiper-slide
+                        +cardCatalog({
+                        header: "английский язык",
+                        price: "18 000 тг",
+                        descr: "2 занятия в неделю по 1,5 ч.",
+                        items: ["Чтение по правилам", "Знание 500 новых слов", "Самостоятельное выполнение домашнего задания"],
+                        mix: "_theme_pink"
+                        })
+                    .swiper-slide.s-catalog__swiper-slide
+                        +cardCatalog({
+                        header: "группа продленного дня",
+                        price: "35 000 тг",
+                        descr: "5 раз в неделю 1 смена с 9:00 по 12:00 2 смена с 14:00 по 17:00",
+                        items: ["Подготовка к СОР, СОЧ", "Проработка пробелов в знаниях", "Индивидуальный подход", "Выявление сильных сторон ребенка"],
+                        mix: "_theme_orange"
+                        })
+        .swiper-button-prev.s-catalog__swiper-button._prev
+        .swiper-button-next.s-catalog__swiper-button._nex
 
 

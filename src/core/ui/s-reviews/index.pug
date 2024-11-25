@@ -1,0 +1,14 @@
+.s-reviews
+    .container 
+        h2.section__title Отзывы 
+        .swiper.s-reviews__swiper
+            .swiper-wrapper.s-reviews__swiper-wrapper
+                each val in [1, 2]
+                    .swiper-slide.s-reviews__swiper-slide
+                        +reviewsMixin({
+                        img: `/assets/media/${malika}.png`,
+                        title: "Malika Fazlieva",
+                        subtitle: "Маған ұнаған жері білімді жақсы береді. Ұлымның қатынап жүргеніне 1 ай болмады бірақ нәтиже бар. Мұғалімдеріде өте сыпайы әрі білімді."
+                        })
+        .swiper-button-prev.s-reviews__swiper-button._prev
+        .swiper-button-next.s-reviews__swiper-button._nex

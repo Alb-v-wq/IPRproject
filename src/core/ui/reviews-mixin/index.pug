@@ -4,6 +4,6 @@ mixin reviewsMixin(params)
 
     div(class= classes)
         .reviews__content
-            .reviews__img(style=`img: url(${params.img});`)
+            img(src=params.src alt=params.alt || '')
             .reviews__title!= params.title
         .reviews__subtitle!= params.subtitle

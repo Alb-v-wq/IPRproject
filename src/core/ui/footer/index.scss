@@ -1,0 +1,34 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+.footer {
+    height: 200px;
+    background: rgb(10, 37, 48);
+    padding: 56px 0 56px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+        display: flex;
+        width: 674px;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    &__list {
+        a {
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+    &__second-logo {
+        width: 187px;
+        height: 51px;
+    }
+}

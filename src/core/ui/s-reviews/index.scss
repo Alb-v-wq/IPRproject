@@ -1,4 +1,9 @@
 .s-reviews {
     min-height: 459px;
     padding-bottom: 69px;
+    &__swiper-slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }

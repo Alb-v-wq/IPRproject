@@ -32,26 +32,26 @@
         });
 
 
-    //     new Swiper(reviewSlider, {
-    //         slidesPerView: 3,
-    //         spaceBetween: 20,
-    //         navigation: {
-    //             nextEl: '.swiper-button-next',
-    //             prevEl: '.swiper-button-prev',
-    //         },
-    //         breakpoints: {
-    //             1: {
-    //                 slidesPerView: 2,
-    //                 spaceBetween: 12,
-    //             },
-    //             767: {
-    //                 slidesPerView: 2,
-    //             },
-    //             1279: {
-    //                 slidesPerView: 3,
-    //             },
-    //         }
-    //     });
+        // new Swiper(reviewSlider, {
+        //     slidesPerView: 3,
+        //     spaceBetween: 20,
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+        //     breakpoints: {
+        //         1: {
+        //             slidesPerView: 2,
+        //             spaceBetween: 12,
+        //         },
+        //         767: {
+        //             slidesPerView: 2,
+        //         },
+        //         1279: {
+        //             slidesPerView: 3,
+        //         },
+        //     }
+        // });
     };
 
     const mount = () => {

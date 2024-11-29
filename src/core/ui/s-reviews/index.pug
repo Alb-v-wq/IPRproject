@@ -1,14 +1,40 @@
 .s-reviews
     .container 
-        h2.section__title Отзывы 
+        h2.s-reviews__title Отзывы 
         .swiper.s-reviews__swiper
             .swiper-wrapper.s-reviews__swiper-wrapper
                 each val in [1, 2]
                     .swiper-slide.s-reviews__swiper-slide
                         +reviewsMixin({
-                        img: `/assets/media/${malika}.png`,
+                        src: '/assets/media/malika.png',
                         title: "Malika Fazlieva",
                         subtitle: "Маған ұнаған жері білімді жақсы береді. Ұлымның қатынап жүргеніне 1 ай болмады бірақ нәтиже бар. Мұғалімдеріде өте сыпайы әрі білімді."
                         })
+                        +reviewsMixin({
+                        src: '/assets/media/aigul.png',
+                        title: "Aigul Lepessova",
+                        subtitle: "Отлично все нравится! Внучка уже 6 месяц занимается, довольны."
+                        })
+                        +reviewsMixin({
+                        src: '/assets/media/malika-2.png',
+                        title: "Malika Fazlieva",
+                        subtitle: "Маған ұнаған жері білімді жақсы береді. Ұлымның қатынап жүргеніне 1 ай болмады бірақ нәтиже бар. Мұғалімдеріде өте сыпайы әрі білімді."
+                        })
+                        +reviewsMixin({
+                        src: '/assets/media/anara.png',
+                        title: "Анара Баймаганбетова",
+                        subtitle: "Искренне рекомендую, детям дают отличные знания и безопасность. Профессионалы своего дела. Удачи вам и успехов желаю."
+                        })
+                        +reviewsMixin({
+                        src: '/assets/media/gulnaz.png',
+                        title: "Gulzhan Kossantayeva",
+                        subtitle: "Комфорная обстановака, распологает к учебе, учителя доброжелательные,но требовательные! То, что надо! Советую 100%."
+                        })
+                        +reviewsMixin({
+                        src: '/assets/media/gulnaz.png',
+                        title: "Енрик Серик",
+                        subtitle: "Айжан Талгатовна өз ісінің маманы. Менің қызымның оқу үлгеріміне көп ықпал тигіздіңіз. Кемеңгер мектебі нағыз кеменгер бала тәлімін береді!"
+                        })
+                        
         .swiper-button-prev.s-reviews__swiper-button._prev
         .swiper-button-next.s-reviews__swiper-button._nex

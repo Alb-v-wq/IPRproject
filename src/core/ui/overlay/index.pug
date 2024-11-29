@@ -1,0 +1,17 @@
+.overlay
+    .modal#bid
+        .modal__close 
+            .modal__subtitle Заполните <span>форму</span>, и мы обязательно свяжемся с Вами.
+            form.feed-form(action="#") 
+                input(placeholder="Ваше имя..." type="text")
+                input(placeholder="Ваш телефон..." type="number")
+                textarea(placeholder="Комментарий...")
+                +button({
+                    text:"Оставить заявку", 
+                    mix:"_theme_yellow _size_m"
+                })
+
+        .modal.modal_bid-thanks#thanks
+            .modal__close 
+            .modal__title <span>Спасибо</span> за заявку
+            .modal__descr В ближайшее время мы <span>свяжемся</span> с Вами

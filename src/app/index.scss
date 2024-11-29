@@ -16,6 +16,8 @@
 @use '../core/ui/s-reviews';
 @use '../core/ui/reviews-mixin';
 @use '../core/ui/s-contacts';
+@use '../core/ui/footer';
+
 
 @include lib.font('Commissioner', 400, 'Commissioner-Regular');
 @include lib.font('Commissioner', 500, 'Commissioner-Medium');

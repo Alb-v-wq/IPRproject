@@ -3,7 +3,7 @@
 
 .card-catalog {
     width: 378px;
-    min-height: 778px;
+    height: 778px;
     border-radius: 30px;
     background: rgb(255, 255, 255);
     &__header {
@@ -87,16 +87,34 @@
     .card-catalog__header {
         background: rgba(255, 167, 36, 1);
     }
+    ul {
+        margin-top: 33px;
+    }
+    .card-catalog__link {
+        margin-bottom: 27px;
+    }
 }
 
 .card-catalog._theme_pink {
     .card-catalog__header {
         background: rgba(255, 76, 148, 1);
     }
+    .card-catalog__link {
+        display: none;
+    }
+    ul {
+        margin-bottom: 113px;
+    }
+    .card-catalog__descr {
+        margin-top: 50px;
+    }
 }
 
 .card-catalog._theme_yellow {
     .card-catalog__header {
         background: rgb(250, 224, 26);
+    }
+    .card-catalog__descr {
+        margin-top: 50px;
     }
 }

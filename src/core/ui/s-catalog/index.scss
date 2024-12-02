@@ -1,3 +1,6 @@
+@use '../core/config/scss' as config;
+@use '../core/lib/scss' as lib;
+
 .s-catalog {
     min-height: 1053px;
     padding: 68px 0 80px 0;
@@ -9,8 +12,8 @@
         position: absolute;
         background-image: url(/assets/media/circle-3.png);
         background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
+        width: 201px;
+        height: 200px;
         top: 210px;
         left: 90px;
     }
@@ -20,22 +23,44 @@
         position: absolute;
         background-image: url(/assets/media/circle-4.png);
         background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
+        width: 268px;
+        height: 267px;
         top: 140px;
         left: 1020px;
+        @media only screen and (max-width: config.$bp-md) {
+            display: none;
+        }
     }
     &__swiper-button {
         color: black;
         &._prev {
             position: absolute;
-            top: 554px;
-            left: 48px;
+            top: 50%;
+            transform: translateX(-50%);
+            left: 80px;
+            @media only screen and (max-width: config.$bp-md) {
+                left: 40px;
+            }
         }
-        &._nex {
+        &._next {
             position: absolute;
-            top: 554px;
-            right: 48px;
+            top: 50%;
+            transform: translateX(-50%);
+            right: 80px;
+            @media only screen and (max-width: config.$bp-md) {
+                right: 20px;
+            }
+        }
+    }
+    &__swiper-slide {
+        @media only screen and (max-width: config.$bp-md) {
+            right: -45px;
+        }
+        @media only screen and (max-width: config.$bp-tablet) {
+            right: -160px;
+        }
+        @media only screen and (max-width: config.$bp-xsm) {
+            right: -8px;
         }
     }
 }

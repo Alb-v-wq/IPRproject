@@ -1,0 +1,16 @@
+mixin modalTypeContent(params)
+    -
+        const classes = params.mix ? `modal fade _type_content ${params.mix}` : 'modal fade _type_content';
+
+    div(tabindex='-1' id=params.id class= classes)
+        .modal-dialog&attributes(attributes)
+            .modal-content
+                .modal-subtitle Заполните <span>форму</span>, и мы обязательно свяжемся с Вами.
+                form.modal-form(action="#") 
+                    input(placeholder="Ваше имя..." type="text")
+                    input(placeholder="Ваш телефон..." type="number")
+                    textarea(placeholder="Комментарий...")
+                +button({
+                    text:"Оставить заявку", 
+                    mix:"_theme_yellow _size_m"
+                    })(data-bs-toggle='modal' data-bs-target='#thanks')  

@@ -5,6 +5,13 @@
   min-height: 719px;
   margin-top: 107px;
   margin-bottom: 59px;
+  @media only screen and (max-width: config.$bp-tablet) {
+    min-height: 670px;
+  }
+  @media only screen and (max-width: config.$bp-xsm) {
+    min-height: 1750px;
+  }
+  
   &__wrapper {
     max-width: 996px;
     position: relative;
@@ -15,35 +22,87 @@
   &__item-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 26px;
     position: absolute;
     &:nth-child(2) {
       top: 0;
       left: 101px;
+      @media only screen and (max-width: config.$bp-tablet) {
+        left: 0;
+      }
+      @media only screen and (max-width: config.$bp-xsm) {
+        top: 480px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     &:nth-child(3) {
       top: 0;
       right: 101px;
+      @media only screen and (max-width: config.$bp-tablet) {
+        right: 0;
+      }
+      @media only screen and (max-width: config.$bp-xsm) {
+        top: 680px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     &:nth-child(4) {
       top: 208px;
       left: 0;
+      @media only screen and (max-width: config.$bp-xsm) {
+        top: 850px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     &:nth-child(5) {
       top: 208px;
       right: 0;
+      @media only screen and (max-width: config.$bp-xsm) {
+        top: 1020px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     &:nth-child(6) {
       top: 416px;
       left: 101px;
+      @media only screen and (max-width: config.$bp-tablet) {
+        left: 0;
+      }
+      @media only screen and (max-width: config.$bp-xsm) {
+        top: 1210px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     &:nth-child(7) {
       top: 416px;
       right: 101px;
+      @media only screen and (max-width: config.$bp-tablet) {
+        right: 0;
+      }
+      @media only screen and (max-width: config.$bp-xsm) {
+        top: 1400px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     &:nth-child(8) {
       top: 508px;
       right: 422px;
+      @media only screen and (max-width: config.$bp-tablet) {
+        left: 284px;
+      }
+      @media only screen and (max-width: config.$bp-xsm) {
+        top: 1570px;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
   &__text {
@@ -53,6 +112,10 @@
     line-height: 29px;
     text-align: center;
     width: 140px;
+    @media only screen and (max-width: config.$bp-tablet) {
+      font-size: 20px;
+      line-height: 23px;
+    }
   }
   &__img {
     width: 120px;

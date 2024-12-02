@@ -5,7 +5,7 @@
         +button({
             text:"Оставить заявку", 
             mix:"_shadow _theme_yellow _size_m"
-        })
+        })(data-bs-toggle='modal' data-bs-target='#content')
         img.s-promo__main-img(src="/assets/media/child.png", alt="child")
         img.s-promo__letter-W(src="/assets/media/letter-W.png", alt="letter-W")
         img.s-promo__blue-book(src="/assets/media/blue-book.png", alt="blue-book")
@@ -13,3 +13,5 @@
         img.s-promo__letter-A(src="/assets/media/letter-A.png", alt="letter-A")
         img.s-promo__number-five(src="/assets/media/number-five.png", alt="number-five")
         img.s-promo__pen(src="/assets/media/pen.png", alt="pen")
+    +modalTypeContent({id: 'content'})
+    +modalTypeThanks({id: 'thanks'})  

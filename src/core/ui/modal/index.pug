@@ -5,12 +5,16 @@ mixin modalTypeContent(params)
     div(tabindex='-1' id=params.id class= classes)
         .modal-dialog&attributes(attributes)
             .modal-content
-                .modal-subtitle Заполните <span>форму</span>, и мы обязательно свяжемся с Вами.
-                form.modal-form(action="#") 
-                    input(placeholder="Ваше имя..." type="text")
-                    input(placeholder="Ваш телефон..." type="number")
-                    textarea(placeholder="Комментарий...")
-                +button({
-                    text:"Оставить заявку", 
-                    mix:"_theme_yellow _size_m"
-                    })(data-bs-toggle='modal' data-bs-target='#thanks')  
+                .modal__form-wrapper
+                    span.modal__title 
+                        | Заполните 
+                        span форму
+                        | , и мы обязательно свяжемся с Вами.
+                    form.modal__form(action="#") 
+                        input(placeholder="Ваше имя..." type="text")
+                        input(placeholder="Ваш телефон..." type="number")
+                        textarea(placeholder="Комментарий...")
+                    +button({
+                        text:"Оставить заявку", 
+                        mix:"_theme_yellow _size_m"
+                        })(data-bs-toggle='modal' data-bs-target='#thanks')

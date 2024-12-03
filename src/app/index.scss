@@ -19,6 +19,8 @@
 @use '../core/ui/footer';
 @use '../core/ui/modal';
 @use '../core/ui/modal-thanks';
+@use '../core/ui/form';
+@use '../core/ui/block-thanks';
 
 
 @include lib.font('Commissioner', 400, 'Commissioner-Regular');

@@ -1,6 +1,9 @@
 //- mixins
 include ../../button/index
 include ../../card-catalog/index
+include ../../reviews-mixin/index
+include ../../modal/index
+include ../../modal-thanks/index
 
 doctype html
 html(lang="ru")
@@ -9,6 +12,7 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
     link(rel="stylesheet", href="vendors/swiper/swiper-bundle.css")
+    link(rel="stylesheet", href="vendors/bootstrap-modal/bootstrap-modal.min.css")
     link(rel="stylesheet", href="css/index.css")
 
     title
@@ -26,5 +30,9 @@ html(lang="ru")
                 block afterWorkarea
 
 
+
+
+        script(src="vendors/jquery/jquery-3.6.0.min.js")
+        script(src="vendors/bootstrap-modal/bootstrap-modal.bundle.min.js")
         script(src="vendors/swiper/swiper-bundle.min.js")
         script(src="js/index.js")

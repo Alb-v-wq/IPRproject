@@ -1,0 +1,9 @@
+mixin reviews(params)
+    -
+        const classes = params.mix ? `reviews ${params.mix}` : 'reviews';
+
+    div(class= classes)
+        .reviews__content
+            img(src=params.src alt=params.alt || '')
+            .reviews__title!= params.title
+        .reviews__subtitle!= params.subtitle

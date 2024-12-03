@@ -1,0 +1,60 @@
+@use '../core/config/scss' as config;
+@use '../core/lib/scss' as lib;
+
+.s-certificates {
+    min-height: 508px;
+    padding: 60px 0 0 0;
+    position: relative;
+    @media only screen and (max-width: config.$bp-md) {
+        min-height: 700px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media only screen and (max-width: config.$bp-md) {
+            width: 600px;
+            justify-content: center;
+        }
+        @media only screen and (max-width: config.$bp-xsm) {
+            width: 400px;
+        }
+        img {
+            @media only screen and (max-width: config.$bp-md) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(/assets/media/certificate-bg.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        top: 68px;
+        left: -202px;
+        z-index: -1;
+        @media only screen and (max-width: config.$bp-xsm) {
+            display: none;
+        }
+    }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(/assets/media/circle-5.png);
+        background-repeat: no-repeat;
+        width: 137px;
+        height: 136px;
+        top: 286px;
+        left: 1248px;
+        z-index: -1;
+        @media only screen and (max-width: config.$bp-md) {
+            display: none;
+        }
+    }
+}

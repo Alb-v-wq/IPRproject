@@ -3,6 +3,16 @@
 
 .s-promo {
     min-height: 749px;
+    @media only screen and (max-width: config.$bp-md) {
+      min-height: 660px;
+    }
+    @media only screen and (max-width: config.$bp-tablet) {
+      min-height: 600px;
+    }
+    @media only screen and (max-width: config.$bp-xsm) {
+      min-height: 500px;
+    }
+
     h1{
       width: 699px;
       height: 118px;
@@ -14,8 +24,25 @@
       span {
         color: rgb(1, 143, 163);
         text-shadow: -38px -28px 1px rgba(1, 143, 163, 0.06);
+
+        @media only screen and (max-width: config.$bp-md) {
+          text-shadow: -22px -18px 1px rgba(1, 143, 163, 0.06);
+        }
+      }
+
+      @media only screen and (max-width: config.$bp-md) {
+        font-size: 30px;
+        width: 430px;
+        height: 118px;
+        line-height: 40px;
+      }
+      @media only screen and (max-width: config.$bp-xsm) {
+        width: 380px;
+        font-size: 25px;
+        text-align: center;
       }
     }
+
     &__descr {
       width: 532px;
       height: 116px;
@@ -25,18 +52,39 @@
       line-height: 29px;
       text-align: left;
       margin-top: 44px;
+
+      @media only screen and (max-width: config.$bp-md) {
+        width: 380px;
+        font-size: 20px;
+        margin-top: 14px;
+      }
+      @media only screen and (max-width: config.$bp-xsm) {
+        font-size: 22px;
+        text-align: center;
+      }
     }
     &__main-img {
       position: absolute;
       top: -40px;
       right: 0;
       z-index: -1;
+      @media only screen and (max-width: config.$bp-tablet) {
+        display: none;
+      }
     }
     &__letter-W {
       position: absolute;
       z-index: -2;
       top: 67px;
       right: 906px;
+
+      @media only screen and (max-width: config.$bp-md) {
+        right: 590px;
+      }
+      @media only screen and (max-width: config.$bp-tablet) {
+        top: 90px;
+        right: 506px;
+      }
     }
     &__blue-book {
       position: absolute;
@@ -49,12 +97,19 @@
       z-index: -2;
       top: 270px;
       right: 233px;
+      @media only screen and (max-width: config.$bp-tablet) {
+        top: 170px;
+        right: 33px;
+      }
     }
     &__letter-A {
       position: absolute;
       z-index: -2;
       top: 770px;
       left: 161px;
+      @media only screen and (max-width: config.$bp-md) {
+        display: none;
+      }
     }
     &__number-five {
       position: absolute;
@@ -67,5 +122,8 @@
       z-index: -2;
       top: 590px;
       left: 476px;
+      @media only screen and (max-width: config.$bp-xsm) {
+        left: 176px;
+      }
     }
   }

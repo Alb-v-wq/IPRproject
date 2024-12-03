@@ -1,0 +1,16 @@
+mixin modalTypeThanks(params)
+    -
+        const classes = params.mix ? `modal fade _type_thanks ${params.mix}` : 'modal fade _type_thanks';
+
+    div(tabindex='-1' id=params.id class= classes)
+        .modal-dialog&attributes(attributes)
+            .modal-content
+                .block-thanks
+                    img(src="/assets/media/icon-ok.png", alt="ok")
+                    span.block-thanks__title
+                        span Спасибо 
+                        | за заявку
+                    span.block-thanks__subtitle 
+                        | В ближайшее время мы 
+                        span свяжемся 
+                        | с Вами

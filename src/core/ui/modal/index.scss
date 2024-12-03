@@ -1,0 +1,13 @@
+@use '../core/config/scss' as config;
+@use '../core/lib/scss' as lib;
+
+.modal-content {
+    height: 531px;
+    width: 400px;
+    border-radius: 30px;
+    background: rgb(246, 250, 255);
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}

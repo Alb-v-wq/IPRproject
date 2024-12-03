@@ -11,6 +11,17 @@
 @use '../core/ui/s-promo';
 @use '../core/ui/s-inform';
 @use '../core/ui/s-subjects';
+@use '../core/ui/s-catalog';
+@use '../core/ui/s-certificates';
+@use '../core/ui/s-reviews';
+@use '../core/ui/reviews-mixin';
+@use '../core/ui/s-contacts';
+@use '../core/ui/footer';
+@use '../core/ui/modal';
+@use '../core/ui/modal-thanks';
+@use '../core/ui/form';
+@use '../core/ui/block-thanks';
+
 
 @include lib.font('Commissioner', 400, 'Commissioner-Regular');
 @include lib.font('Commissioner', 500, 'Commissioner-Medium');

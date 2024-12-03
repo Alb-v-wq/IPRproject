@@ -2,17 +2,18 @@
 @use '../../lib/scss' as lib;
 
 .card-catalog {
-    width: 340px;
-    min-height: 778px;
+    width: 378px;
+    height: 778px;
     border-radius: 30px;
+    background: rgb(255, 255, 255);
     &__header {
-        width: 340px;
+        width: 378px;
         height: 80px;
         padding: 25px 0;
         border-radius: 30px 30px 0px 0px;
         color: rgb(255, 255, 255);
         font-size: 24px;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 29px;
         letter-spacing: 0%;
         text-align: center;
@@ -86,10 +87,34 @@
     .card-catalog__header {
         background: rgba(255, 167, 36, 1);
     }
+    ul {
+        margin-top: 33px;
+    }
+    .card-catalog__link {
+        margin-bottom: 27px;
+    }
 }
 
 .card-catalog._theme_pink {
     .card-catalog__header {
         background: rgba(255, 76, 148, 1);
+    }
+    .card-catalog__link {
+        display: none;
+    }
+    ul {
+        margin-bottom: 113px;
+    }
+    .card-catalog__descr {
+        margin-top: 50px;
+    }
+}
+
+.card-catalog._theme_yellow {
+    .card-catalog__header {
+        background: rgb(250, 224, 26);
+    }
+    .card-catalog__descr {
+        margin-top: 50px;
     }
 }

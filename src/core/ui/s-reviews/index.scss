@@ -1,0 +1,28 @@
+@use '../core/config/scss' as config;
+@use '../core/lib/scss' as lib;
+
+.s-reviews {
+    min-height: 459px;
+    padding-bottom: 69px;
+    position: relative;
+    &__swiper-slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__swiper-button {
+        color: black;
+        &._prev {
+            position: absolute;
+            top: 50%;
+            transform: translateX(-50%);
+            left: 48px;
+        }
+        &._next {
+            position: absolute;
+            top: 50%;
+            transform: translateX(-50%);
+            right: 48px;
+        }
+    }
+}

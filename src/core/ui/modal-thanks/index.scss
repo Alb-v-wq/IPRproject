@@ -1,0 +1,32 @@
+@use '../core/config/scss' as config;
+@use '../core/lib/scss' as lib;
+
+// .modal-content {
+//     height: 531px;
+//     width: 400px;
+//     border-radius: 30px;
+//     background: rgb(246, 250, 255);
+//     transform: translateY(-50%);
+//     padding: 80px 10px 103px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     position: fixed;
+//     top: 100px;
+//     left: 50%;
+//     transform: translateX(-50%);
+// }
+    
+// .thanks-title, .thanks-subtitle {
+//     width: 336px;
+//     font-size: 36px;
+//     font-weight: 500;
+//     line-height: 44px;
+//     color: rgb(0, 0, 0);
+//     text-align: center;
+//     margin-bottom: 36px;
+//     span {
+//         color: rgb(1, 143, 163);
+//     }
+// }

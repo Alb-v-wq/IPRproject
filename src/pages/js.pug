@@ -1,0 +1,40 @@
+extends ../core/ui/layout/templates/default
+
+block title
+    | Упражнения по JavaScript
+
+block workarea
+    .container
+        h1 Упражнения по JavaScript
+        section.section.s-js
+            h2 Смена классов
+
+            .s-js__exercise
+                p При нажатии на кнопку (#changeColor) класс _theme_pink должен удалиться и установиться класс _theme_blue. После чего к кнопке добавить класс _disabled
+                .s-js__circle._change-color._theme_pink
+                +button({
+                    text: "Сменить цвет",
+                    mix: "_theme_blue _size_m"
+                })(id="changeColor")
+
+            .s-js__exercise
+                p При нажатии на кнопку (#toggleColor) класс _theme_pink должен переключаться на _theme_blue и при повторном клике обратно
+                .s-js__circle._toggle-color._theme_pink
+                +button({
+                    text: "Переключить цвет",
+                    mix: "_theme_blue _size_m"
+                })(id="toggleColor")
+
+            h2 Удаление элементов
+
+            .s-js__exercise
+                p При нажатии на кнопку (#deleteBtn) удалить все круги в этой области
+                .s-js__content
+                    .s-js__circle._theme_pink._size_sm
+                    .s-js__circle._theme_pink._size_sm
+                    .s-js__circle._theme_pink._size_sm
+                    .s-js__circle._theme_pink._size_sm
+                +button({
+                    text: "Удалить круги",
+                    mix: "_theme_blue _size_m"
+                })(id="deleteBtn")

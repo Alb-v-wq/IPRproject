@@ -38,3 +38,60 @@ block workarea
                     text: "Удалить круги",
                     mix: "_theme_blue _size_m"
                 })(id="deleteBtn")
+
+            h2 Работа с атрибутами
+
+            .s-js__exercise
+                p При нажатии на кнопку (#addAttr) у всех кружков в этой области должен добавляться атрибут `data-active="true"`.
+                p При нажатии на кнопку (#removeAttr) у всех кружков в этой области должен удалиться атрибут `data-active`.
+                .s-js__content
+                    .s-js__circle._theme_pink._size_sm
+                    .s-js__circle._theme_pink._size_sm
+                    .s-js__circle._theme_pink._size_sm
+                .s-js__buttons
+                    +button({
+                        text: "Добавить атрибут",
+                        mix: "_theme_blue _size_m"
+                    })(id="addAttr")
+                    +button({
+                        text: "Удалить атрибут",
+                        mix: "_theme_pink _size_m"
+                    })(id="removeAttr")
+
+            h2 Изменение текста
+
+            .s-js__exercise
+                p При нажатии на кнопку (#changeText) текст внутри кружка должен измениться на "Я изменён!"
+                .s-js__circle._theme_pink Я изменюсь!
+                +button({
+                    text: "Изменить текст",
+                    mix: "_theme_blue _size_m"
+                })(id="changeText")
+
+            h2 Скрытие элементов
+
+            .s-js__exercise
+                p При нажатии на кнопку (#hideCircles) все кружки в этой области должны скрыться (используй `display: none`)
+                .s-js__content
+                    .s-js__circle._theme_pink._size_sm
+                    .s-js__circle._theme_pink._size_sm
+                    .s-js__circle._theme_pink._size_sm
+                +button({
+                    text: "Скрыть кружки",
+                    mix: "_theme_blue _size_m"
+                })(id="hideCircles")
+
+            h2 Создание/ удаление элементов
+
+            .s-js__exercise
+                p При нажатии на кнопку (#createFromInput) создаётся новый круг с текстом, введённым в поле.
+                .s-js__content
+                    .s-js__circle._theme_pink
+                input(type="text" placeholder="Введите текст").s-js__input
+                +button({
+                    text: "Создать круг с текстом",
+                    mix: "_theme_blue _size_m"
+                })(id="createFromInput")
+
+
+

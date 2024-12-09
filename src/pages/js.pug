@@ -7,7 +7,7 @@ block workarea
     .container
         h1 Упражнения по JavaScript
         section.section.s-js
-            h2 Смена классов
+            h2 1. Смена классов
 
             .s-js__exercise
                 p При нажатии на кнопку (#changeColor) класс _theme_pink должен удалиться и установиться класс _theme_blue. После чего к кнопке добавить класс _disabled
@@ -18,14 +18,14 @@ block workarea
                 })(id="changeColor")
 
             .s-js__exercise
-                p При нажатии на кнопку (#toggleColor) класс _theme_pink должен переключаться на _theme_blue и при повторном клике обратно
+                p 2.  При нажатии на кнопку (#toggleColor) класс _theme_pink должен переключаться на _theme_blue и при повторном клике обратно
                 .s-js__circle._toggle-color._theme_pink
                 +button({
                     text: "Переключить цвет",
                     mix: "_theme_blue _size_m"
                 })(id="toggleColor")
 
-            h2 Удаление элементов
+            h2 3. Удаление элементов
 
             .s-js__exercise
                 p При нажатии на кнопку (#deleteBtn) удалить все круги в этой области
@@ -39,7 +39,7 @@ block workarea
                     mix: "_theme_blue _size_m"
                 })(id="deleteBtn")
 
-            h2 Работа с атрибутами
+            h2 4. Работа с атрибутами
 
             .s-js__exercise
                 p При нажатии на кнопку (#addAttr) у всех кружков в этой области должен добавляться атрибут `data-active="true"`.
@@ -58,7 +58,7 @@ block workarea
                         mix: "_theme_pink _size_m"
                     })(id="removeAttr")
 
-            h2 Изменение текста
+            h2 5. Изменение текста
 
             .s-js__exercise
                 p При нажатии на кнопку (#changeText) текст внутри кружка должен измениться на "Я изменён!"
@@ -68,7 +68,7 @@ block workarea
                     mix: "_theme_blue _size_m"
                 })(id="changeText")
 
-            h2 Скрытие элементов
+            h2 6. Скрытие элементов
 
             .s-js__exercise
                 p При нажатии на кнопку (#hideCircles) все кружки в этой области должны скрыться (используй `display: none`)
@@ -81,7 +81,7 @@ block workarea
                     mix: "_theme_blue _size_m"
                 })(id="hideCircles")
 
-            h2 Создание/ удаление элементов
+            h2 7. Создание/ удаление элементов
 
             .s-js__exercise
                 p При нажатии на кнопку (#createFromInput) создаётся новый круг с текстом, введённым в поле.
@@ -92,6 +92,15 @@ block workarea
                     text: "Создать круг с текстом",
                     mix: "_theme_blue _size_m"
                 })(id="createFromInput")
+
+
+            h2 8. Относительные размеры
+
+            .s-js__exercise
+                p Внутри дива .s-js__content создать квадрат, который при уменьшении экрана тоже будет уменьшаться, при этом оставаясь квадратом
+                .s-js__content
+
+
 
 
 

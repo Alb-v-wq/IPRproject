@@ -1,0 +1,184 @@
+extends ../core/ui/layout/templates/default
+
+block title
+    | Упражнения по JavaScript
+
+block workarea
+    .container
+        h1 Упражнения по JavaScript
+        section.section.s-exercises
+            h2 1. Смена классов
+
+            .s-exercises__exercise#js1a
+                p При нажатии на кнопку (#changeColor) класс _theme_pink должен удалиться и установиться класс _theme_blue. После чего к кнопке добавить класс _disabled
+                .s-exercises__circle._change-color._theme_pink
+                +button({
+                    text: "Сменить цвет",
+                    mix: "_theme_blue _size_m"
+                })(id="changeColor")
+
+            .s-exercises__exercise#js1b
+                p При нажатии на кнопку (#toggleColor) класс _theme_pink должен переключаться на _theme_blue и при повторном клике обратно
+                .s-exercises__circle._toggle-color._theme_pink
+                +button({
+                    text: "Переключить цвет",
+                    mix: "_theme_blue _size_m"
+                })(id="toggleColor")
+
+            h2 2. Удаление элементов
+
+            .s-exercises__exercise#js2
+                p При нажатии на кнопку (#deleteBtn) удалить все круги в этой области
+                .s-exercises__content
+                    .s-exercises__circle._theme_pink._size_sm
+                    .s-exercises__circle._theme_pink._size_sm
+                    .s-exercises__circle._theme_pink._size_sm
+                    .s-exercises__circle._theme_pink._size_sm
+                +button({
+                    text: "Удалить круги",
+                    mix: "_theme_blue _size_m"
+                })(id="deleteBtn")
+
+            h2 3. Работа с атрибутами
+
+            .s-exercises__exercise#js3
+                p При нажатии на кнопку (#addAttr) у всех кружков в этой области должен добавляться атрибут `data-active="true"`.
+                p При нажатии на кнопку (#removeAttr) у всех кружков в этой области должен удалиться атрибут `data-active`.
+                .s-exercises__content
+                    .s-exercises__circle._theme_pink._size_sm
+                    .s-exercises__circle._theme_pink._size_sm
+                    .s-exercises__circle._theme_pink._size_sm
+                .s-exercises__buttons
+                    +button({
+                        text: "Добавить атрибут",
+                        mix: "_theme_blue _size_m"
+                    })(id="addAttr")
+                    +button({
+                        text: "Удалить атрибут",
+                        mix: "_theme_pink _size_m"
+                    })(id="removeAttr")
+
+            h2 4. Изменение текста
+
+            .s-exercises__exercise#js4
+                p При нажатии на кнопку (#changeText) текст внутри кружка должен измениться на "Я изменён!"
+                .s-exercises__circle._theme_pink Я изменюсь!
+                +button({
+                    text: "Изменить текст",
+                    mix: "_theme_blue _size_m"
+                })(id="changeText")
+
+            h2 5. Скрытие элементов
+
+            .s-exercises__exercise#js5
+                p При нажатии на кнопку (#hideCircles) все кружки в этой области должны скрыться (используй `display: none`)
+                .s-exercises__content
+                    .s-exercises__circle._theme_pink._size_sm
+                    .s-exercises__circle._theme_pink._size_sm
+                    .s-exercises__circle._theme_pink._size_sm
+                +button({
+                    text: "Скрыть кружки",
+                    mix: "_theme_blue _size_m"
+                })(id="hideCircles")
+
+            h2 6. Создание/ удаление элементов
+
+            .s-exercises__exercise#js6
+                p При нажатии на кнопку (#createFromInput) создаётся новый круг с текстом, введённым в поле.
+                .s-exercises__content
+                    .s-exercises__circle._theme_pink Привет!
+                input(type="text" placeholder="Введите текст").s-exercises__input
+                +button({
+                    text: "Создать круг с текстом",
+                    mix: "_theme_blue _size_m"
+                })(id="createFromInput")
+
+
+            h2 7. Использование alert
+
+            .s-exercises__exercise#js7
+                p При нажатии на кнопку (#showAlertAndLog) отобразить сообщение с текстом "Это alert!" (используй alert)
+                +button({
+                    text: "Показать alert и log",
+                    mix: "_theme_blue _size_m"
+                })(id="showAlertAndLog")
+
+
+            h2 8. Использование setTimeout
+
+            .s-exercises__exercise#js8
+                p При нажатии на кнопку (#showDelayedMessage) через 3 секунды в консоли должно появиться сообщение "Прошло 3 секунды!", а текст внутри круга должен измениться на "Таймер сработал!".
+                .s-exercises__circle._theme_pink Ожидаю...
+                +button({
+                    text: "Запустить таймер",
+                    mix: "_theme_blue _size_m"
+                })(id="showDelayedMessage")
+
+
+            h2 9. Перемещение элемента
+
+            .s-exercises__exercise#js9
+                p При нажатии на кнопку (#moveCircle) круг должен переместиться из левой области блока .s-exercises__content в правую и наоборот.
+                .s-exercises__content
+                    .s-exercises__left
+                        .s-exercises__circle._theme_pink._size_sm(id="movableCircle")
+                    .s-exercises__right
+                +button({
+                    text: "Переместить круг",
+                    mix: "_theme_blue _size_m"
+                })(id="moveCircle")
+
+            h2 10. Работа с методами массива
+
+            .s-exercises__exercise#js10
+                p У тебя есть массив чисел: `[1, 2, 3, 4, 5]`. При нажатии на кнопку (#processArray) должны выполниться следующие действия:
+                ul
+                    li Все числа должны быть увеличены на 1.
+                    li Отфильтровать только чётные числа.
+                    li Получившийся массив должен быть выведен в консоль.
+                +button({
+                    text: "Обработать массив",
+                    mix: "_theme_blue _size_m"
+                })(id="processArray")
+
+            h2 11. Работа с методами строк
+
+            .s-exercises__exercise#js11
+                p У тебя есть строка: `"javascript is fun"`. При нажатии на кнопку (#processString) должны быть выполнены следующие действия:
+                ul
+                    li Преобразовать строку в верхний регистр.
+                    li Заменить все пробелы на подчеркивания ("_").
+                    li Результат должен быть выведен в консоль.
+                +button({
+                    text: "Обработать строку",
+                    mix: "_theme_blue _size_m"
+                })(id="processString")
+
+            h2 12. Подключение библиотеки через CDN
+
+            .s-exercises__exercise#js12
+                p В этом упражнении тебе нужно подключить любую библиотеку по твоему выбору через CDN.
+                ul
+                    li Скачай файлы выбранной библиотеки и помести их в папку `src/core/vendors`.
+                    li В HTML файле подключи эту библиотеку через CDN и если нужно её стили.
+                    li Напиши код, который использует одну из функций этой библиотеки.
+                    li Результат выполнения действия выведи в консоль или отображай на странице.
+                +button({
+                    text: "Выполнить действие с библиотекой",
+                    mix: "_theme_blue _size_m"
+                })(id="useLibrary")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
